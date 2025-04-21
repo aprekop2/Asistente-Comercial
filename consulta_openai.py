@@ -53,23 +53,3 @@ def guardar_interaccion(pregunta, respuesta):
 
 
 ### templates/index.html
-<!-- Guarda esto en una carpeta llamada templates/ -->
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Asistente Comercial</title>
-</head>
-<body>
-    <h1>Asistente Comercial</h1>
-    <form method="post">
-        <label for="pregunta">Haz una pregunta:</label><br>
-        <textarea name="pregunta" rows="4" cols="50"></textarea><br><br>
-        <input type="submit" value="Enviar">
-    </form>
-    {% if respuesta %}
-        <h2>Respuesta:</h2>
-        <p>{{ respuesta }}</p>
-    {% endif %}
-</body>
-</html>
