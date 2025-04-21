@@ -1,0 +1,19 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Asistente Comercial</title>
+</head>
+<body>
+  <h1>Asistente Comercial</h1>
+  <form action="/" method="post">
+    <label for="pregunta">Escribe tu solicitud:</label><br>
+    <input type="text" id="pregunta" name="pregunta" required><br><br>
+    <button type="submit">Enviar</button>
+  </form>
+  {% if respuesta %}
+    <h2>Respuesta:</h2>
+    <p>{{ respuesta }}</p>
+  {% endif %}
+</body>
+</html>
